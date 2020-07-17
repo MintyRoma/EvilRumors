@@ -1,0 +1,7 @@
+name: EvilRumors
+main: pomestie.minty.EvilRumors
+version: 1.0.6
+description: 'Randomize kill messages'
+author: [Minty]
+api-version: 1.16
+website: <a href="http://pomestie.space" class="external free" rel="nofollow">Unicorn Project</a>
