@@ -1,6 +1,6 @@
 name: EvilRumors
 main: pomestie.minty.EvilRumors
-version: 1.0.6
+version: 1.0.7
 description: 'Randomize kill messages'
 author: [Minty]
 api-version: 1.16

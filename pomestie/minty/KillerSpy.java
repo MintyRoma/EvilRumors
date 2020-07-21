@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
 package pomestie.minty;
 
 import org.bukkit.event.EventHandler;
@@ -12,7 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.Listener;
 
-public class Spy implements Listener
+public class KillerSpy implements Listener
 {
     @EventHandler
     public void Killed(final PlayerDeathEvent event) {

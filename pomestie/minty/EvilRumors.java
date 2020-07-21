@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
 package pomestie.minty;
 
 import java.util.List;
@@ -13,10 +9,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class EvilRumors extends JavaPlugin
 {
     protected FileConfiguration config;
-    private Spy watchdog;
+    private KillerSpy watchdog;
     
     public EvilRumors() {
-        this.watchdog = new Spy();
+        this.watchdog = new KillerSpy();
     }
     
     public void onEnable() {
@@ -27,7 +23,7 @@ public class EvilRumors extends JavaPlugin
         this.config = this.getConfig();
         this.getLogger().info("Saving messages to memory");
         ConfigKeeper.messages = (List<String>)this.config.getStringList("messages");
-        this.getLogger().info("Registering Event Spy");
+        this.getLogger().info("Registering event Spy [KillerSpy]");
         this.getServer().getPluginManager().registerEvents((Listener)this.watchdog, (Plugin)this);
         this.getLogger().info("Event Spy was successfully registered");
     }
